@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		try {
-			json1.put("timestamp", 1352525183);
+			json1.put("timestamp", 1352);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -62,16 +62,18 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		
-		
+		double cmp1 = 0;
 		try {
-			double cmp1 = json1.getDouble("timestamp");
+			cmp1 = json1.getDouble("timestamp");
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
+		
+		double cmp2 = 0;
 		try {
-			double cmp2 = json2.getDouble("timestamp");
+			cmp2 = json2.getDouble("timestamp");
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -122,6 +124,7 @@ public class MainActivity extends Activity {
     }
   ]
 }");*/
+		
 		
 		
 		
